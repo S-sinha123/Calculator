@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading-box">
+        <h3 class="heading">PLEASE USE ME FOR SOLVE YOUR CALCULATION</h3>
+    </div>
+    <div class="gaping"></div>
+    <div class="outline">
+        <input type="text" class="display-box" readonly>
+        <div class="gap"></div>
+        <div class="button">
+            <div class="first-row">
+                <button class="row1-buttons" onclick="displayScanner+='7';
+                document.querySelector('.display-box').value=displayScanner;">7</button>
+                <button class="row1-buttons" onclick="displayScanner+='8';
+                document.querySelector('.display-box').value=displayScanner;">8</button>
+                <button class="row1-buttons" onclick="displayScanner+='9';
+                document.querySelector('.display-box').value=displayScanner;">9</button>
+                <button class="row1-buttons" style="background-color: black; color: white;" onclick="displayScanner+='+';
+                document.querySelector('.display-box').value=displayScanner;">+</button>
+            </div>
+            <div class="second-row">
+                <button class="row2-buttons" onclick="displayScanner+='4';
+                document.querySelector('.display-box').value=displayScanner;">4</button>
+                <button class="row2-buttons" onclick="displayScanner+='5';
+                document.querySelector('.display-box').value=displayScanner;">5</button>
+                <button class="row2-buttons" onclick="displayScanner+='6';
+                document.querySelector('.display-box').value=displayScanner;">6</button>
+                <button class="row2-buttons" style="background-color: black;color: white;" onclick="displayScanner+='-';
+                document.querySelector('.display-box').value=displayScanner;">-</button>
+            </div>
+            <div class="third-row">
+                <button class="row3-buttons" onclick="displayScanner+='1';
+                document.querySelector('.display-box').value=displayScanner;">1</button>
+                <button class="row3-buttons" onclick="displayScanner+='2';
+                document.querySelector('.display-box').value=displayScanner;">2</button>
+                <button class="row3-buttons" onclick="displayScanner+='3';
+                document.querySelector('.display-box').value=displayScanner;">3</button>
+                <button class="row3-buttons" style="background-color: black;color: white;" onclick="displayScanner+='*';
+                document.querySelector('.display-box').value=displayScanner;">*</button>
+            </div>
+            <div class="forth-row">
+                <button class="row4-buttons" style="background-color: rgb(148, 11, 11);" onclick="displayScanner ='';
+                document.querySelector('.display-box').value=displayScanner;">C</button>
+                <button class="row4-buttons" onclick="displayScanner+='0';
+                document.querySelector('.display-box').value=displayScanner;">0</button>
+                <button class="row4-buttons" onclick="
+                let result=eval(displayScanner);
+                displayScanner=result;
+                document.querySelector('.display-box').value=displayScanner;">=</button>
+                <button class="row4-buttons" style="background-color: black;color: white;" onclick="displayScanner+='/';
+                document.querySelector('.display-box').value=displayScanner;">/</button>
+            </div>
+            <div class="fifth-row">
+                <button class="row5-buttons" onclick="displayScanner=`${Math.floor(displayScanner/10)}`;
+                document.querySelector('.display-box').value=displayScanner;"><- </button>
+                        <button class="row5-buttons" onclick="displayScanner+='00';
+                document.querySelector('.display-box').value=displayScanner;">00</button>
+                        <button class="row5-buttons" onclick="displayScanner+='%';
+                document.querySelector('.display-box').value=displayScanner;">%
+                        </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let displayScanner = '';
+        document.querySelector('.display-box').value = displayScanner;
+    </script>
+</body>
+
+</html>

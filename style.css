@@ -1,0 +1,148 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    color: rgb(148, 1, 247);
+    font-style: initial;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 3px;
+    margin-bottom: 2px;
+}
+
+.heading-box {
+    margin-top: 2px;
+    width: 100%;
+    height: 9%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.gaping{
+    width: 100%;
+    height:6%;
+}
+
+.outline {
+    border: 2px solid black;
+    width: 30vw;
+    border-radius: 6px;
+    margin: auto;
+    background-position: center center;
+    text-align: center;
+    margin-top: 3vh;
+    height: 84%;
+}
+
+.display-box {
+    margin-top: 5px;
+    height: 10vh;
+    border: 2px solid black;
+    width: 28vw;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gap {
+    height: 4%;
+    width: 100%;
+}
+
+.button {
+    width: 27vw;
+    height: 51vh;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.first-row {
+    width: 100%;
+    height: 25%;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 4px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.second-row {
+    width: 100%;
+    height: 25%;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 4px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.third-row {
+    width: 100%;
+    height: 25%;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 4px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.forth-row {
+    width: 100%;
+    height: 25%;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 4px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.row1-buttons {
+    height: 11vh;
+    width: 6vw;
+}
+
+.row2-buttons {
+    height: 11vh;
+    width: 6vw;
+}
+
+.row3-buttons {
+    height: 11vh;
+    width: 6vw;
+}
+
+.row4-buttons {
+    height: 11vh;
+    width: 6vw;
+}
+.fifth-row{
+    width: 100%;
+    height: 25%;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 4px;
+    display:flex;
+    justify-content: space-around;
+}
+.row5-buttons{
+    height: 11vh;
+    width: 6vw;
+}
